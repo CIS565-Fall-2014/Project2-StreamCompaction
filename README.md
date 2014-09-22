@@ -31,11 +31,15 @@ it and itself, or exclusive, meaning the current term is a summation of all
 elements before it excluding itself. 
 
 Inclusive:
+
 In : [ 3 4 6 7 9 10 ]
+
 Out : [ 3 7 13 20 29 39 ]
 
 Exclusive
+
 In : [ 3 4 6 7 9 10 ]
+
 Out : [ 0 3 7 13 20 29 ]
 
 Note that the resulting prefix sum will always be n + 1 elements if the input
@@ -55,11 +59,15 @@ like to compact it into the following array:
 [ 3 4 6 6 7 1 ]
 
 We can perform a transform on input array to transform it into a boolean array:
+
 In :  [ 0 0 3 4 0 6 6 7 0 1 ]
+
 Out : [ 0 0 1 1 0 1 1 1 0 1 ]
 
 Performing a scan on the output, we get the following array :
+
 In :  [ 0 0 1 1 0 1 1 1 0 1 ]
+
 Out : [ 0 0 0 1 2 2 3 4 5 5 ]
 
 Notice that the output array produces a corresponding index array that we can
